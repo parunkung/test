@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0;}
+body{
+	background:#f5f6f7;
+	font:13px/1.8 "맑은 고딕";
+	color:#222;}
+ul{list-style:none;}
+.hidden{
+	height:0;
+	overflow:hidden;}
+
+header{
+	text-align:center;
+	padding:100px 0 50px;}
+.logo{width:240px;}
+
+section{}
+
+/*form 공통 */
+form{
+	border:1px solid #eee;
+
+	max-width:650px;
+	margin:0 auto;
+	background:#fff;
+	padding:20px;
+	box-sizing:border-box;
+}
+form ul{}
+form ul li{margin-bottom:20px;}
+
+.box{
+	border:1px solid #ccc;
+	padding:10px 15px;
+	position:relative;
+	width:100%;
+	box-sizing:border-box;}
+	
+	.inL{
+		outline:none;
+		border:none;
+		font-size:15px;
+	}
+
+	.inR{
+		position:absolute;
+		right:20px;
+		top:50%;
+		transform:translateY(-50%);
+	}
+
+	.pwImg{
+		width:18px;
+		height:20px;
+	}
+
+	
+
+/*생년월일 */
+.birthWrap{overflow:auto;}
+
+.birthWrap>.box{
+	display:inline-block;
+	width:30%;
+	margin-left:5%;
+	box-sizing:border-box;
+	float:left;
+	
+}
+.birthWrap>.box:first-child{margin-left:0;}
+	
+.birthWrap input, select{
+	outline:none;
+	border:0;
+	width:100%;}
+
+
+/* 에러메세지 */
+#alertTxt {
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 45px;
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+
+.error_next_box {
+    margin-top: 9px;
+    font-size: 12px;
+    color: red; 
+    display: none;
+}
+
+
+/*가입하기 버튼 */
+form ul li:last-child{margin-top:50px;}
+.joinBtn{
+	width:100%;
+	padding:10px 0;
+	border:none;
+	background:#08a600;
+	font-size:18px;
+	font-weight:500;
+	color:white;
+}
