@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0;}
+body{font:15px "맑은 고딕";}
+
+header{
+	background:skyblue;
+	text-align:center;
+	padding:20px 0;
+	min-width:700px;
+	margin:0 auto;	
+}
+
+section{
+	border:1px solid pink;
+	width:80%;
+	min-width:700px;
+	margin:50px auto;	
+	padding:20px;
+	box-sizing:border-box;	
+}
+
+section h2 {
+	background:skyblue;
+	padding:10px 20px;
+	margin-bottom:20px;
+	font-size:1.3em;
+	color:white;
+}
+
+section form{
+	border:1px solid #eee;
+	padding:10px;
+}
+
+form table{
+
+	border:1px solid #eee;
+	width:100%;
+	border-collapse:collapse;
+}
+
+
+form table th{
+	background:#ccc;
+	text-align:right;
+	padding:10px;
+	width:220px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+} 
+
+form table td{
+	padding-left:10px;
+	border:1px solid #eee;	
+
+} 
+
+
+/* form 태그들 속성 지정*/
+form input[type="text"]{
+	padding:5px 10px;
+	width:200px;
+	font-size:15px;
+	border:none;
+	outline:none;
+}
+
+
+.btnWrap{
+	padding-top:50px;
+	text-align:center;	
+} 
+
+.btnWrap input[type="submit"],
+.btnWrap input[type="reset"]
+.btnWrap input[type="button"]{
+	background:skyblue;
+	border:1px solid skyblue;
+	padding:10px 30px;
+	outline:none;
+	border-radius:20px;
+	font-weight:bold;
+	font-size:1.1em;
+	transition:0.5s;
+	width:100px;
+	text-align:center;
+	color:white;
+}
+
+.btnWrap input[type="submit"]:hover{
+	background:white;
+	color:skyblue;
+}
+
+.btnWrap input[type="reset"]:hover{
+	background:white;
+	color:skyblue;
+}
+
+.btnWrap input[type="button"]:hover{
+	background:white;
+	color:skyblue;
+}
+
+
+
