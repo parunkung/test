@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.imgWrap{}
+
+.imgWrap ul{
+	list-style:none;
+	overflow:auto;
+}
+
+.imgWrap ul li{
+	width:48%;
+	float:left;
+	margin-left:4%;
+}
+.imgWrap ul li:nth-child(1),
+.imgWrap ul li:nth-child(2){margin-bottom:20px;}
+
+.imgWrap ul li:nth-child(2n+1){margin-left:0%;}
+
+.imgWrap ul li img{width:100%;}
+

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.imgWrap{}
+
+.imgWrap ul{
+	list-style:none;
+	overflow:auto;
+}
+
+.imgWrap ul li{
+	width:32%;
+	float:left;
+	margin-left:2%;
+}
+.imgWrap ul li:first-child{margin-left:0%;}
+
+.imgWrap ul li img{
+	width:100%;
+}
+
