@@ -20,8 +20,21 @@ public class LoginServlet extends HttpServlet {
    
    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       
-      RequestDispatcher dispatcher = request.getRequestDispatcher("member/login.jsp");
-      dispatcher.forward(request, response);
+      //RequestDispatcher dispatcher = request.getRequestDispatcher("member/login.jsp");
+      //dispatcher.forward(request, response);
+	   
+	   //로그인이 완료된 회원이 인증처리없이 메인페이지로 이동하고 싶을 때~
+	   String url = "member/login.jsp";
+	   
+	   HttpSession session = request.getSession();
+	   
+	   if(session.getAttribute("loginUser") != null) {	//이미 로그인상태인지 물어보는것...
+		   url = "main.jsp";	//메인페이지로 가라...
+		   		   
+	   }
+	   
+	   RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+	   dispatcher.forward(request, response);
       
    }
 
