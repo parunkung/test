@@ -10,7 +10,7 @@
    <title>회원정보 수정</title>
    <script src="script/member.js"></script>
 </head>
-<body>
+<body> 
    
    <h3>회원정보 수정</h3>
    <form action="memberUpdate.do" method="post" name="frm">
