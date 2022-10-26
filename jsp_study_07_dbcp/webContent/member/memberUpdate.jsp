@@ -9,7 +9,7 @@
    <meta charset="UTF-8">
    <title>회원정보 수정</title>
    <script src="script/member.js"></script>
-</head>
+</head>  
 <body> 
    
    <h3>회원정보 수정</h3>
