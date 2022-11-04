@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
 	<h3>로그인</h3>
-	<form method="post" action="login.do" name="frm">
+	<form method="post" action="login.do" >
 	
 		<table>
 			<tr>
